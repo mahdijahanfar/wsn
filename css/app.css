@@ -1,0 +1,178 @@
+main {
+    padding: 3rem;
+    flex-grow: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+p:has(img) {
+    text-align: center;
+}
+
+.everyPage h2 {
+    font-size: 1.6em;
+    font-weight: 600;
+    line-height: 2em;
+    padding: 10px 0 20px;
+}
+
+.everyPage h3,
+.everyPage h4 {
+    color: #3d3d3d;
+    font-size: 1.35em;
+    font-weight: 600;
+    line-height: 2em;
+    padding: 10px 0 15px;
+}
+
+.everyPage p {
+    margin: 0 0 1.5em;
+    padding: 0;
+}
+
+.h5 {
+    color: red;
+}
+
+.goLeft {
+    text-align: justify;
+    padding-right: 40px;
+}
+
+.wellcomePage,
+.endPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.imageWrapper {
+    text-align: center;
+    padding: 7rem;
+}
+
+.imageWrapper img {
+    width: 40rem;
+    animation: spn infinite 50s linear
+}
+
+.spinner {
+    animation: spn infinite 50s linear;
+    padding: 35px;
+
+}
+
+@keyframes spn {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.link {
+    cursor: pointer;
+}
+
+footer {
+
+    padding: 0 2rem 2rem 2rem;
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.animGo {
+    transform: translateX(-120%) !important;
+}
+
+.everyPage {
+    transition: all .4s cubic-bezier(1, 0, 0, 1);
+    transform: unset;
+    box-shadow: 0px 0px 7px 2px #e6dddd;
+    padding: 4rem;
+}
+
+.animCome {
+    transform: translateX(120%) !important;
+}
+
+.page-content {
+    overflow: hidden;
+    height: 100%;
+    padding: 1rem;
+}
+
+ul.everyPage ul {
+    margin-top: 1rem;
+}
+
+ul.everyPage>li:has(li) {
+    border-top: 1px solid red;
+
+}
+
+ul.everyPage li {
+    margin: 3rem 0;
+    font-weight: 700;
+    padding-right: 6rem;
+    cursor: pointer;
+}
+
+::selection {
+    background: #f58;
+    color: #fff
+}
+
+mtd {
+    padding: 10px;
+}
+
+.article-section__table thead {
+    background-color: #eee;
+    border: 1px solid #9e9e9e;
+    font-weight: 600;
+}
+
+.formulTag {}
+
+.formulWrapper {
+    text-align: center;
+}
+
+.left-aligned {
+    padding: 10px 50px;
+}
+
+.liLinks {
+    padding: 10px 0;
+}
+
+.article-table-content-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.article-table-content-wrapper table {
+    border: 1px solid #eee;
+}
+
+.imgWrapper {
+    text-align: center;
+    padding: 20px 0;
+}
